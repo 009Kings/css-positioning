@@ -67,7 +67,7 @@ footer {
 }
 
 .phone-img {
-  margin: 2em;
+  margin: 50px;
 }
 
 .side-content {
@@ -115,10 +115,6 @@ footer {
 .text-box h2 {
   margin: 0;
   color: #06365f;
-}
-
-.text-box p {
-  display: inline-block;
 }
 
 .text-box img {
