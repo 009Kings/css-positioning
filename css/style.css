@@ -33,10 +33,10 @@ main {
   position: relative;
   top: 0;
   z-index: -1;
-  background: -webkit-linear-gradient(#06365f, #2B537F); /* Safari */
-  background: -o-linear-gradient(#06365f, #2B537F); /* Opera */
-  background: -moz-linear-gradient(#06365f, #2B537F); /* Firefox */
-  background: linear-gradient(#06365f, #2B537F); /* Standard */
+  background: -webkit-linear-gradient(#396083, #587EA0); /* Safari */
+  background: -o-linear-gradient(#396083, #587EA0); /* Opera */
+  background: -moz-linear-gradient(#396083, #587EA0); /* Firefox */
+  background: linear-gradient(#396083, #587EA0); /* Standard */
   height: 300px;
 }
 
@@ -44,9 +44,26 @@ footer {
   margin: 50px;
 }
 
-footer a {
-  padding: 9px;
-  color: #06365f;
+.links {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  font-size: 12px;
+}
+
+.links li, a {
+  display: inline-block;
+  padding: 4.5px;
+  color: #587EA0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.links li:last-child {
+  color: lightgrey;
+  margin-left: 10px;
 }
 
 .phone-img {
@@ -60,6 +77,25 @@ footer a {
   justify-content: space-between;
   align-content: stretch;
   width: 500px;
+}
+
+#login {
+  background: -webkit-linear-gradient(#7E9EB8, #4B7699); /* Safari */
+  background: -o-linear-gradient(#7E9EB8, #4B7699); /* Opera */
+  background: -moz-linear-gradient(#7E9EB8, #4B7699); /* Firefox */
+  background: linear-gradient(#7E9EB8, #4B7699); /* Standard */
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #365f83;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#login img {
+  margin-right: 5px;
 }
 
 .two-bits {
