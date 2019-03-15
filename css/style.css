@@ -17,6 +17,9 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: url("../img/bgtile.png") repeat-x;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 main {
@@ -26,8 +29,24 @@ main {
   margin-top: 40px;
 }
 
+.bg-gradient {
+  position: relative;
+  top: 0;
+  z-index: -1;
+  background: -webkit-linear-gradient(#06365f, #2B537F); /* Safari */
+  background: -o-linear-gradient(#06365f, #2B537F); /* Opera */
+  background: -moz-linear-gradient(#06365f, #2B537F); /* Firefox */
+  background: linear-gradient(#06365f, #2B537F); /* Standard */
+  height: 300px;
+}
+
 footer {
   margin: 50px;
+}
+
+footer a {
+  padding: 9px;
+  color: #06365f;
 }
 
 .phone-img {
@@ -40,6 +59,7 @@ footer {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-content: stretch;
+  width: 500px;
 }
 
 .two-bits {
@@ -49,10 +69,27 @@ footer {
 }
 
 .text-box {
-  width: 450px;
-  padding: 20px;
-  background: white;
-  border-radius: 2px;
+  position: relative;
+  background: url("../img/frame.png") no-repeat;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 20px 40px;
+}
+
+.text-box h2 {
+  margin: 0;
+  color: #06365f;
+}
+
+.text-box p {
+  display: inline-block;
+}
+
+.text-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .download {
